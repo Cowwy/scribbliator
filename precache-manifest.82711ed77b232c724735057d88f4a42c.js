@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "459f8b08df898459eb2bc6bf7bba256b",
+    "revision": "6d52fa63bffcb068c89dceec610a1707",
     "url": "/scribbliator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scribbliator/static/css/2.64a99b10.chunk.css"
   },
   {
-    "revision": "cbf984d8e500052a0896",
+    "revision": "e7e1804e9030024c1bee",
     "url": "/scribbliator/static/css/main.db39f3d6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scribbliator/static/js/2.fc7e389a.chunk.js.LICENSE"
   },
   {
-    "revision": "cbf984d8e500052a0896",
-    "url": "/scribbliator/static/js/main.524eba72.chunk.js"
+    "revision": "e7e1804e9030024c1bee",
+    "url": "/scribbliator/static/js/main.e3ba75ac.chunk.js"
   },
   {
     "revision": "d36db2eb9d8d371e6ac2",
