@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/scribbliator/static/css/main.db39f3d6.chunk.css",
+    "main.css": "/scribbliator/static/css/main.2bf39b7a.chunk.css",
     "main.js": "/scribbliator/static/js/main.e3ba75ac.chunk.js",
     "main.js.map": "/scribbliator/static/js/main.e3ba75ac.chunk.js.map",
     "runtime-main.js": "/scribbliator/static/js/runtime-main.df91561f.js",
@@ -9,10 +9,10 @@
     "static/js/2.fc7e389a.chunk.js": "/scribbliator/static/js/2.fc7e389a.chunk.js",
     "static/js/2.fc7e389a.chunk.js.map": "/scribbliator/static/js/2.fc7e389a.chunk.js.map",
     "index.html": "/scribbliator/index.html",
-    "precache-manifest.82711ed77b232c724735057d88f4a42c.js": "/scribbliator/precache-manifest.82711ed77b232c724735057d88f4a42c.js",
+    "precache-manifest.15245e80d48dc42eebfa8e6b38dccb9f.js": "/scribbliator/precache-manifest.15245e80d48dc42eebfa8e6b38dccb9f.js",
     "service-worker.js": "/scribbliator/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/scribbliator/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.db39f3d6.chunk.css.map": "/scribbliator/static/css/main.db39f3d6.chunk.css.map",
+    "static/css/main.2bf39b7a.chunk.css.map": "/scribbliator/static/css/main.2bf39b7a.chunk.css.map",
     "static/js/2.fc7e389a.chunk.js.LICENSE": "/scribbliator/static/js/2.fc7e389a.chunk.js.LICENSE",
     "static/media/index.css": "/scribbliator/static/media/scribbliator-home-3.662ecba5.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.df91561f.js",
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.fc7e389a.chunk.js",
-    "static/css/main.db39f3d6.chunk.css",
+    "static/css/main.2bf39b7a.chunk.css",
     "static/js/main.e3ba75ac.chunk.js"
   ]
 }
