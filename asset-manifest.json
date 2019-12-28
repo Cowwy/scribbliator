@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/scribbliator/static/css/main.84f137e0.chunk.css",
-    "main.js": "/scribbliator/static/js/main.4bf909e1.chunk.js",
-    "main.js.map": "/scribbliator/static/js/main.4bf909e1.chunk.js.map",
+    "main.css": "/scribbliator/static/css/main.f9515d15.chunk.css",
+    "main.js": "/scribbliator/static/js/main.524eba72.chunk.js",
+    "main.js.map": "/scribbliator/static/js/main.524eba72.chunk.js.map",
     "runtime-main.js": "/scribbliator/static/js/runtime-main.df91561f.js",
     "runtime-main.js.map": "/scribbliator/static/js/runtime-main.df91561f.js.map",
     "static/css/2.64a99b10.chunk.css": "/scribbliator/static/css/2.64a99b10.chunk.css",
     "static/js/2.fc7e389a.chunk.js": "/scribbliator/static/js/2.fc7e389a.chunk.js",
     "static/js/2.fc7e389a.chunk.js.map": "/scribbliator/static/js/2.fc7e389a.chunk.js.map",
     "index.html": "/scribbliator/index.html",
-    "precache-manifest.98465b4a857af08a1af35b9923709ccb.js": "/scribbliator/precache-manifest.98465b4a857af08a1af35b9923709ccb.js",
+    "precache-manifest.45970eca41458e8b5d5b254edaee4b1f.js": "/scribbliator/precache-manifest.45970eca41458e8b5d5b254edaee4b1f.js",
     "service-worker.js": "/scribbliator/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/scribbliator/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.84f137e0.chunk.css.map": "/scribbliator/static/css/main.84f137e0.chunk.css.map",
+    "static/css/main.f9515d15.chunk.css.map": "/scribbliator/static/css/main.f9515d15.chunk.css.map",
     "static/js/2.fc7e389a.chunk.js.LICENSE": "/scribbliator/static/js/2.fc7e389a.chunk.js.LICENSE",
     "static/media/index.css": "/scribbliator/static/media/scribbliator-home-3.662ecba5.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.df91561f.js",
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.fc7e389a.chunk.js",
-    "static/css/main.84f137e0.chunk.css",
-    "static/js/main.4bf909e1.chunk.js"
+    "static/css/main.f9515d15.chunk.css",
+    "static/js/main.524eba72.chunk.js"
   ]
 }
