@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/scribbliator/static/css/main.6106cb83.chunk.css",
-    "main.js": "/scribbliator/static/js/main.a0db8cc1.chunk.js",
-    "main.js.map": "/scribbliator/static/js/main.a0db8cc1.chunk.js.map",
+    "main.js": "/scribbliator/static/js/main.d4d8605f.chunk.js",
+    "main.js.map": "/scribbliator/static/js/main.d4d8605f.chunk.js.map",
     "runtime-main.js": "/scribbliator/static/js/runtime-main.df91561f.js",
     "runtime-main.js.map": "/scribbliator/static/js/runtime-main.df91561f.js.map",
     "static/css/2.64a99b10.chunk.css": "/scribbliator/static/css/2.64a99b10.chunk.css",
     "static/js/2.84a29f5c.chunk.js": "/scribbliator/static/js/2.84a29f5c.chunk.js",
     "static/js/2.84a29f5c.chunk.js.map": "/scribbliator/static/js/2.84a29f5c.chunk.js.map",
     "index.html": "/scribbliator/index.html",
-    "precache-manifest.729136815ef0f0083180533a1d354da2.js": "/scribbliator/precache-manifest.729136815ef0f0083180533a1d354da2.js",
+    "precache-manifest.0183319e852a19f877b9b6424db9d7a0.js": "/scribbliator/precache-manifest.0183319e852a19f877b9b6424db9d7a0.js",
     "service-worker.js": "/scribbliator/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/scribbliator/static/css/2.64a99b10.chunk.css.map",
     "static/css/main.6106cb83.chunk.css.map": "/scribbliator/static/css/main.6106cb83.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.64a99b10.chunk.css",
     "static/js/2.84a29f5c.chunk.js",
     "static/css/main.6106cb83.chunk.css",
-    "static/js/main.a0db8cc1.chunk.js"
+    "static/js/main.d4d8605f.chunk.js"
   ]
 }
