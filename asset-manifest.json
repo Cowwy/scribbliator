@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/scribbliator/static/css/main.6106cb83.chunk.css",
-    "main.js": "/scribbliator/static/js/main.80415bfe.chunk.js",
-    "main.js.map": "/scribbliator/static/js/main.80415bfe.chunk.js.map",
+    "main.css": "/scribbliator/static/css/main.a0af72d4.chunk.css",
+    "main.js": "/scribbliator/static/js/main.e2987b37.chunk.js",
+    "main.js.map": "/scribbliator/static/js/main.e2987b37.chunk.js.map",
     "runtime-main.js": "/scribbliator/static/js/runtime-main.df91561f.js",
     "runtime-main.js.map": "/scribbliator/static/js/runtime-main.df91561f.js.map",
     "static/css/2.64a99b10.chunk.css": "/scribbliator/static/css/2.64a99b10.chunk.css",
-    "static/js/2.54541dd7.chunk.js": "/scribbliator/static/js/2.54541dd7.chunk.js",
-    "static/js/2.54541dd7.chunk.js.map": "/scribbliator/static/js/2.54541dd7.chunk.js.map",
+    "static/js/2.3587f941.chunk.js": "/scribbliator/static/js/2.3587f941.chunk.js",
+    "static/js/2.3587f941.chunk.js.map": "/scribbliator/static/js/2.3587f941.chunk.js.map",
     "index.html": "/scribbliator/index.html",
-    "precache-manifest.1e8ca10f79e9383020fb06d89fa0ff0a.js": "/scribbliator/precache-manifest.1e8ca10f79e9383020fb06d89fa0ff0a.js",
+    "precache-manifest.96a8aa22b7d54bc0f70f0281a37631a1.js": "/scribbliator/precache-manifest.96a8aa22b7d54bc0f70f0281a37631a1.js",
     "service-worker.js": "/scribbliator/service-worker.js",
     "static/css/2.64a99b10.chunk.css.map": "/scribbliator/static/css/2.64a99b10.chunk.css.map",
-    "static/css/main.6106cb83.chunk.css.map": "/scribbliator/static/css/main.6106cb83.chunk.css.map",
-    "static/js/2.54541dd7.chunk.js.LICENSE": "/scribbliator/static/js/2.54541dd7.chunk.js.LICENSE",
+    "static/css/main.a0af72d4.chunk.css.map": "/scribbliator/static/css/main.a0af72d4.chunk.css.map",
+    "static/js/2.3587f941.chunk.js.LICENSE": "/scribbliator/static/js/2.3587f941.chunk.js.LICENSE",
     "static/media/index.css": "/scribbliator/static/media/scribbliator-home-3.662ecba5.jpg",
     "static/media/scribbliatorLogo.png": "/scribbliator/static/media/scribbliatorLogo.8b3ffbd6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.df91561f.js",
     "static/css/2.64a99b10.chunk.css",
-    "static/js/2.54541dd7.chunk.js",
-    "static/css/main.6106cb83.chunk.css",
-    "static/js/main.80415bfe.chunk.js"
+    "static/js/2.3587f941.chunk.js",
+    "static/css/main.a0af72d4.chunk.css",
+    "static/js/main.e2987b37.chunk.js"
   ]
 }

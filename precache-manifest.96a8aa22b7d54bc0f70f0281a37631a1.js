@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "623da49bffdee3fa9c412fbc0eb2cbe3",
+    "revision": "c739f32120367efe6cb8bd788b5ecd2c",
     "url": "/scribbliator/index.html"
   },
   {
-    "revision": "a7822291c99479d68cad",
+    "revision": "ecf6e22f01faefb668b3",
     "url": "/scribbliator/static/css/2.64a99b10.chunk.css"
   },
   {
-    "revision": "bed8d2806447a88f0ddd",
-    "url": "/scribbliator/static/css/main.6106cb83.chunk.css"
+    "revision": "cb52acad1c1451a8f931",
+    "url": "/scribbliator/static/css/main.a0af72d4.chunk.css"
   },
   {
-    "revision": "a7822291c99479d68cad",
-    "url": "/scribbliator/static/js/2.54541dd7.chunk.js"
+    "revision": "ecf6e22f01faefb668b3",
+    "url": "/scribbliator/static/js/2.3587f941.chunk.js"
   },
   {
     "revision": "c2e558a0b8465286ae0f1ce2d53eec13",
-    "url": "/scribbliator/static/js/2.54541dd7.chunk.js.LICENSE"
+    "url": "/scribbliator/static/js/2.3587f941.chunk.js.LICENSE"
   },
   {
-    "revision": "bed8d2806447a88f0ddd",
-    "url": "/scribbliator/static/js/main.80415bfe.chunk.js"
+    "revision": "cb52acad1c1451a8f931",
+    "url": "/scribbliator/static/js/main.e2987b37.chunk.js"
   },
   {
     "revision": "d36db2eb9d8d371e6ac2",
