@@ -7,7 +7,11 @@ class ScribbliatorApp extends Component {
 
     render( ) {
         return( 
-            <h1>Main Application</h1>
+            <div className="profileContainer">
+                <div className="profileCase">
+                    <h1>Main Application</h1>
+                </div>
+            </div>
         );
     }
 }

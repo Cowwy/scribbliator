@@ -21,11 +21,30 @@ class ProfilePage extends Component {
 
         return( 
             <div className="profileContainer">
-                <label>{ general.getFirstName( ) }</label>
-                <label>{ general.getLastName( ) }</label>
-                <label>{ general.getMiddleName( ) }</label>
-                <label>{ general.getGender( ) }</label>
-                <label>{ general.getDOB( ) }</label>
+                <div className="profileCase">
+                    <div className="FlexLayout">
+                        <div className="colA">
+                            <ul className="profileCategoryList">
+                                <li>General Info</li>
+                                <li>Geogrphical</li>
+                                <li>Medical</li>
+                                <li>History</li>
+                                <li>Doctor</li>
+                            </ul>
+                        </div>
+
+                        <div className="colB">
+                            <ul className="profileCategoryList">
+                                <li>General Info</li>
+                                <li>Geogrphical</li>
+                                <li>Medical</li>
+                                <li>History</li>
+                                <li>Doctor</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         );
     }

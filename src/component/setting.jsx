@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 class SettingPage extends Component {
     render( ) {
         return( 
-            <h1>Setting Page</h1>
+            <div className="profileContainer">
+                <div className="profileCase">
+                    <h1>Settings</h1>
+                </div>
+            </div>
         );
     }
 }
