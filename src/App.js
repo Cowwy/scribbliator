@@ -1,32 +1,19 @@
 import React, { Component } from 'react';
 
-import LandingPage from './comPage/landingPage';
-import MemberPage from "./comPage/memberPage";
-
-import $appState from './compService/scribbliatorService';
-
+import MainScreen from './component/switchRoutes/mainScreen';
 import './css/App.css';
-import Axios from 'axios';
 
 class App extends Component {
   state = { 
   };
 
-  test = async ( ) => {
-    const promise = await Axios.get( 'http://localhost:3000/' );
+  render( ) {    
+    //THIS SHOULD BE DIRECTING TO MAIN SCREEN
+    //OR LET THIS PAGE BE "/" HOME
 
-    console.log( promise );
-  }
-
-  render( ) {
-    this.test( );
-    
     return (
       <div className="container-fluid">
-        { $appState.isUserLogin( ) 
-          ?<MemberPage />
-          :<LandingPage />
-        }
+        <MainScreen />
       </div>
     );
   }

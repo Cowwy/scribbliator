@@ -3,26 +3,13 @@ import React, { Component } from 'react';
 class RegisterComp extends Component {
     render( ) {
         const { errors, onSubmit, onChange } = this.props;
-        const { email, password, username } = errors;
+        const { email, password } = errors;
 
         return( 
             <div className="row">
                 <div className="col-lg"></div>
                 <div className="col-lg-5">
                     <form onSubmit={onSubmit}>
-                        <div className="form-group row">
-                            <div className="col-sm-12">
-                                <input 
-                                    className="form-control" 
-                                    placeholder="Username" 
-                                    type="text" 
-                                    id="username" 
-                                    onChange={onChange}
-                                />
-                                { username && <div className="alert alert-danger text-left">{username}</div> }
-                            </div>
-                        </div>
-
                         <div className="form-group row">                                        
                             <div className="col-sm-12">
                                 <input 

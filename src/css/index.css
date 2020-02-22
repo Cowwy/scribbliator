@@ -70,6 +70,13 @@ body {
   margin:auto;
 }
 
+.scribbliator-memberpage {
+  height:100.0vh;
+  position: absolute;
+  left:0px; right:0px; top:0px; bottom:0px;
+  margin:auto;
+}
+
 .main-footer {
   position:fixed;
   left:0px; bottom:0px;
@@ -121,23 +128,28 @@ form {
 /* iPhone X, iPhone 6/7/8/Plus, iPhone 5/SE */
 /* Pixel 2 XL, Pixel 2, Galaxy 5 */
 @media (orientation: landscape) {
+  .debug { background-color:cyan !important; }
+
   p.slogan    { font-size:1.7vw; }
   h1.appTitle { font-size:5.0vw; }
 
   .nav-item   { font-size:1.8vw; margin-right:0.9em; }
   .main-footer{ font-size:0.9vw; height:2.7vw; line-height:2.7vw; }
 
-  .debug { background-color:cyan !important; }
+      div.profileContainer { padding-top:13vw; }
+
 }
 
 @media (orientation:portrait) {
+  .debug { background-color:pink; }
+
   p.slogan    { font-size:2.2vh; }
   h1.appTitle { font-size:5.5vh; }
 
   .nav-item   { font-size:2.2vh; }
   .main-footer{ font-size:1.3vh; height:3.5vh; line-height:3.5vh; }
-
-  .debug { background-color:pink; }
+  
+      div.profileContainer { padding-top:80px; }
 }
 
 
@@ -148,30 +160,54 @@ form {
 
 
 @media (orientation:portrait) and (min-width: 576px) {
+  .debug { background-color:blue; }
+
   p.slogan    { font-size:2.9vh; }
   h1.appTitle { font-size:8.0vh; }
-  .debug { background-color:blue; }
+
+      div.profileContainer { padding-top:80px; }
 }
 
 /* iPad */
 @media (orientation:portrait) and (min-width: 768px) {
+  .debug { background-color:red; }
+
   p.slogan    { font-size:2.8vh; }
   h1.appTitle { font-size:8.0vh; }
 
-  .debug { background-color:red; }
+      div.profileContainer { padding-top:80px; }
 }
 
 /* iPad Pro */
 @media (orientation:portrait) and (min-width: 992px) {
+  .debug { background-color:green; }
+
   p.slogan    { font-size:2.5vh; }
   h1.appTitle { font-size:9.0vh; }
-  /* form { max-width:700px; } */
-
-  .debug { background-color:green; }
+  
+      div.profileContainer { padding-top:120px; }
 }
 
+
 @media (orientation:portrait) and (min-width: 1200px) {
+  .debug { background-color:yellow; }
+
   p.slogan { font-size:22px; }
 
-  .debug { background-color:yellow; }
+  div.profileContainer { padding-top:120px; }
+}
+
+
+
+/* ====================================
+  Scribbliator User Profile Screen
+===================================== */
+div.profileContainer {
+  width:100%;
+  height:100%;
+
+  padding-left:5vw;
+  padding-right:5vw;
+
+  background-color:rgba(240, 240, 240, 1.0);
 }

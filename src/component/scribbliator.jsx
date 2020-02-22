@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
 class ScribbliatorApp extends Component {
+    state = {
+    };
+
+
     render( ) {
         return( 
-            <h1>Scribbliator Main Application</h1>
+            <h1>Main Application</h1>
         );
     }
 }

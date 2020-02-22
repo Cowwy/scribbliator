@@ -1,5 +1,12 @@
 {
-    "appName" : "Scribbliator",
-    "version" : "0.0.0",
-    "homepage" : "/scribbliator"
+    "appName"  : "Scribbliator",
+    "version"  : "0.0.0",
+    "homepage" : "/scribbliator",
+    
+    "endpoint" : "http://localhost:3900",
+    "port"     : 3900,
+    "db"       : "Scribbliator",
+
+    "secret"   : "jwtPrivateKey",
+    "salt"     : 10
 }

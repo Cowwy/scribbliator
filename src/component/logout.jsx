@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 
-import $config  from '../config.json';
-import $appStat from '../compService/scribbliatorService';
+import MyConfig     from '../config.json';
+import LoginService from '../services/loginService';
 
 class LogoutPage extends Component {
     componentDidMount( ) {
-        $appStat.logoutUser( );
-        this.props.history.replace( `${$config.homepage}` );
-        window.location.reload( );
+        const { onAuth : updateAuthentication } = this.props;
+
+        LoginService.logoutUser( );
+        updateAuthentication( );
+
+        this.props.history.replace( `${MyConfig.homepage}` );
     }
 
     render( ) {

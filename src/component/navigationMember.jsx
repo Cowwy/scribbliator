@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../images/scribbliatorLogo.png';
 
-import $config  from '../config.json';
+import MyConfig  from '../config.json';
 
 class NavigationBarMember extends Component {
     render( ) {
@@ -10,7 +10,7 @@ class NavigationBarMember extends Component {
 
         return (
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-                <NavLink className="navbar-brand" to={`${$config.homepage}`}>
+                <NavLink className="navbar-brand" to={`${MyConfig.homepage}`}>
                     <img className="main-logo" src={Logo} alt={`${appTitle} Homepage`}/>
                 </NavLink>
 
@@ -21,7 +21,7 @@ class NavigationBarMember extends Component {
                 <div className="collapse navbar-collapse" id="mainNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to={`${$config.homepage}`}>My Workbench</NavLink>
+                            <NavLink className="nav-link" to={`${MyConfig.homepage}`}>My Workbench</NavLink>
                         </li>
 
                         <li className="nav-item">

@@ -7,7 +7,7 @@ class ForgetComp extends Component {
 
     render( ) {
         const { errors, onSubmit, onChange } = this.props;
-        const { username, password } = errors;
+        const { email, password, newPassword } = errors;
 
         return( 
             <div className="row">
@@ -18,12 +18,12 @@ class ForgetComp extends Component {
                             <div className="col-sm-12">
                                 <input 
                                     className="form-control" 
-                                    placeholder="Username or Email Address" 
+                                    placeholder="Email Address" 
                                     type="text" 
-                                    id="username" 
+                                    id="email" 
                                     onChange={onChange}
                                 />
-                                { username && <div className="alert alert-danger text-left">{username}</div> }
+                                { email && <div className="alert alert-danger text-left">{email}</div> }
                             </div>
                         </div>
                         
@@ -33,10 +33,23 @@ class ForgetComp extends Component {
                                     type="password" 
                                     className="form-control" 
                                     id="password" 
-                                    placeholder="New Password"
+                                    placeholder="Current Password"
                                     onChange={onChange}
                                 />
                                 { password && <div className="alert alert-danger text-left">{password}</div> }
+                            </div>
+                        </div>
+
+                        <div className="form-group row">
+                            <div className="col-sm-12">
+                                <input 
+                                    type="password" 
+                                    className="form-control" 
+                                    id="newPassword" 
+                                    placeholder="New Password"
+                                    onChange={onChange}
+                                />
+                                { newPassword && <div className="alert alert-danger text-left">{newPassword}</div> }
                             </div>
                         </div>
 

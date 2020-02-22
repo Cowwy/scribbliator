@@ -1,13 +1,13 @@
 import React from 'react';
-import Joi from 'joi-browser';
 
 // ====================
 //  ABSCTRACTION NOTE:
 //  submitForm( )
-//  customValidation( )
 //
-//  YOU WILL NEED TO WRITE YOUR OWN 
-//  IF YOU ARE EXTEND FROM THIS CLASS.
+//  customValidation( ) 
+//      GOES BEYOND JOI VALIDATION, IF YOU NEED TO ACCESS DATABASE
+//      TO VERIFY IF EMAIL IS TAKEN.  YOU WILL NEED TO DO THAT
+//      IN THIS ABSTRACT FUNCTION.
 //
 //
 class Form extends React.Component {
@@ -15,33 +15,24 @@ class Form extends React.Component {
         data   : {},
         errors : {}
     };
- 
+
     //THIS METHOD VALIDATES EVERYTHING
-    //EITHER THERE IS 1 ERROR OR NO ERROR
-    validate = ( e ) => {
-        //VALIDATE ALL INPUT
-        const options   = { abortEarly: false };
-        let { error } = Joi.validate( this.state.data, this.schema, options );
+    validate = async ( ) => {
+        //CUSTOM VALIDATE AGAINST DATABASE
+        //VALIDATE ALL INPUTS AS WELL
+        const customError = await this.validateAgainstDB( this.state.data );  //ABSTRACTION
 
-        const customError = this.validateCustomCheck( );        //ABSTRACTION
+        //IF THERE IS NO ERRORS
+        if( !customError ) return null;
 
-
-        // CHECK FOR CUSTOMIZED ERRORS
-        if( customError && !error ) {
-            error = {};
-            error.details = [customError];
-        }
-        
-        if( !error ) return null;
+        //COMPILE ERRORS
         else {
-            let errors = {};
+            const errors = { };
 
-            for( let item of error.details ) {
-                const path = item.path;
-                const msg  = item.message;
-
-                errors[path] = msg;
-            }
+            customError.details.forEach( function( value ) {
+                const { path, message } = value;
+                errors[path] = message;
+            });
 
             return errors;
         }
@@ -49,12 +40,10 @@ class Form extends React.Component {
 
 
     validateProperty = ( { id, value } ) => {
-        const field  = { [id] : value };
-        const schema = { [id] : this.schema[id] };
-        const { error } = Joi.validate( field, schema );
-
+        const error = this.customValidateSingleProperty( { [id] : value } );
         return error ? error.details[0].message : null;
     }
+
 
     changeHandler = ( { currentTarget : input } ) => {
         // RETRIEVE CURRENT STATE DATA
@@ -70,14 +59,16 @@ class Form extends React.Component {
 
         // TRANSFER STATE DATA
         data[input.id] = input.value;
-
+        
         // SETSTATE FOR BOTH DATA AND ERRORS
         this.setState( { data, errors } );
+        
     }
 
-    submitHandler = ( e ) => {
+
+    submitHandler = async ( e ) => {
         e.preventDefault( );
-        const errors = this.validate( e );
+        const errors = await this.validate( e );
         this.setState( { errors : errors || {} } ); //ERRORS TRUSEY OR GIVE EMPTY OBJECT
 
         if( errors ) return;

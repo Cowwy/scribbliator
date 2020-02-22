@@ -1,51 +1,58 @@
 import React        from 'react';
-import Joi          from 'joi-browser';
+import axios        from "axios";
 
-import H1Title      from '../common/h1Title';
 import RegisterComp from '../common/registerComp';
 import Footer       from '../common/footer';
 import Form         from './form';
 
-import $storage     from '../compService/storageService';
-import $appState    from '../compService/scribbliatorService';
-import $config      from '../config.json';
+import MyConfig     from '../config.json';
+import MyJoi        from './validator/joi-validationPipeline';
+
 
 class RegisterForm extends Form {
     state = {
-        data : { email : "", username : "", password : "" },
+        data : { email : "", password : "" },
         errors : {}
     };
 
-    schema = {
-        email    : Joi.string( ).email( ).required( ),
-        username : Joi.string( ).regex(/^[a-zA-Z]+$/).required( ),
-        password : Joi.string( ).min(6).required( )
-    };
-
-    validateCustomCheck = ( ) => {
-        return $appState.validateDuplicateEmail( this.state.data ) 
-            || $appState.validateDuplicateUsername( this.state.data );
+    //THIS IS WHERE YOU WILL WRITE THE DATABASE AXIOS CALL
+    //CHECK IF EMAIL IS TAKEN
+    validateAgainstDB = async ( data ) => {
+        return MyJoi.validate( data );
     }
 
-    submitForm = async ( ) => {
-        //Local Storage Key -> <scribbliator-<version>-<username>
-        const recordID = $appState.createKey( this.state.data );
+    customValidateSingleProperty = ( data ) => {
+        return MyJoi.validateSingleProperty( data );
+    }
 
-        //Local Storage Data -> Data
-        const recordData = $appState.createRecord( this.state.data );
+    //SUBMIT FORM WILL ADD USER TO DATABASE
+    submitForm = async ( ) => {
+        try {
+            const { status, data } = await axios.post( `${MyConfig.endpoint}/register`, { ...this.state.data } )            
+
+            if( status === 200 ) {    
+                this.props.history.replace( "/success" );
+                localStorage.setItem( "userToken", data );
+            }
+        }
         
-        //setItem into localStorage
-        $storage.set( recordID, recordData );
-        $storage.set( "userToken", recordID );
-        
-        this.props.history.replace( `${$config.homepage}` );
-        window.location.reload( );
+        catch( err ) {
+            const { data } = err.response;
+
+            this.props.history.replace( {
+                pathname: '/400',
+                state: { 
+                    error: data,
+                    src: 'Register'
+                }
+            } );
+        }
     }
 
     render( ) {
         return( 
             <React.Fragment>
-                <H1Title title="Sign Up" />
+                <h1 className="appTitle">Sign Up</h1>
 
                 <RegisterComp 
                     errors={this.state.errors}

@@ -1,6 +1,5 @@
 import React, {Component } from 'react';
 
-import H1Title from '../common/h1Title';
 import Footer from '../common/footer';
 
 class ForgetSuccess extends Component {
@@ -11,7 +10,7 @@ class ForgetSuccess extends Component {
     render( ) {
         return (
             <React.Fragment>
-                <H1Title title="Reset Done!" />
+                <h1 className="appTitle">Reset Done!</h1>
 
                 <div className="row">
                     <div className="col-lg"></div>

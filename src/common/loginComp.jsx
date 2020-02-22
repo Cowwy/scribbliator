@@ -8,7 +8,7 @@ class LoginComp extends Component {
 
     render( ) {
         const { errors, onSubmit, onChange } = this.props;
-        const { username, password } = errors;
+        const { email, password } = errors;
 
         return( 
             <div className="row">
@@ -19,12 +19,12 @@ class LoginComp extends Component {
                             <div className="col-sm-12">
                                 <input 
                                     className="form-control" 
-                                    placeholder="Username or Email Address" 
+                                    placeholder="Email Address" 
                                     type="text" 
-                                    id="username" 
+                                    id="email" 
                                     onChange={onChange}
                                 />
-                                { username && <div className="alert alert-danger text-left">{username}</div> }
+                                { email && <div className="alert alert-danger text-left">{email}</div> }
                             </div>
                         </div>
                         
