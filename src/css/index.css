@@ -49,6 +49,19 @@ body {
   font-size:0.9em !important;
 }
 
+div.FlexLayout {
+  display:flex;
+}
+
+.FlexLayout .colA {
+  min-width:250px;
+  border-right:1px solid rgba( 0, 0, 0, 0.3 );
+}
+
+.FlexLayout .colB { width:100%; }
+
+.show { display:block; }
+.hide { display:none; }
 
 /* ====================================
   Scribbliator Homepage
@@ -143,7 +156,14 @@ form {
 
   div.profileCase { 
     width:100%;
-    padding-top:10vh;  
+    padding-top:10vh; padding-left:0vw; padding-right:0vw; 
+  }
+
+  div.colA { display:none; }
+
+  .colB 
+    ul.mobile {
+    padding:20px 10px;  
   }
 }
 
@@ -210,40 +230,33 @@ form {
 ===================================== */
 div.profileContainer {
   width:100vw;
-  height:100vh;
-  background-color:rgba(240, 240, 240, 1.0);
 }
 
 div.profileCase {
   height:100%;
   margin:auto;
   padding-bottom:8vh;
-
-  /* background-color:red; */
 }
 
-.FlexLayout .colA {
-  min-width:250px;
-  border-right:1px solid rgba( 0, 0, 0, 0.3 );
-  /* background-color:blue; */
+.borderPopout {
+  border-width:1px;
+  border-style:solid;
+  border-color:rgba( 0, 0, 0, 0.3);
 }
 
-.FlexLayout .colB {
-  width:100%;
-  background-color:yellow;
-}
+.onSave { color:rgba( 0, 0, 255, 0.5 ); }
+.onSave:hover, .onToggle:hover { cursor: pointer; }
 
-div.FlexLayout {
-  display:flex;
 
-}
-
-ul.profileCategoryList {
+.colA 
+  ul.profileA {
   list-style: none;
   margin:0px; padding:20px;
 }
 
-ul.profileCategoryList li {
+
+.colA 
+  ul.profileA li {
   width:100%;
   padding:1.8vh;
 
@@ -253,4 +266,55 @@ ul.profileCategoryList li {
   border-radius:5px;
 
   box-shadow:0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ul-style-none { list-style:none; }
+.margin-all-0  { margin:0px; }
+.padding-1vh   { padding:1.0vh; }
+.error { margin-left:10px; color:red; font-style:italic; font-size:12px; }
+
+.colB 
+  li.infoBox {
+  border:2px solid rgba( 0, 0, 0, 0.3 );
+  border-radius:5px;
+
+  width:100%;
+  margin-bottom:25px;
+
+  box-shadow:-2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.colB 
+  .categoryTitle { 
+  border-width:0px 0px 1px 0px; 
+  padding-right:15px !important;
+}
+
+.colB
+  .categoryField { 
+  border-width:0px 0px 1px 0px;
+  padding-left:30px !important;
+}
+
+.colB
+  .flex-2Col {
+  border-bottom-width:1px;
+  width:100%;
+}
+
+.colB 
+  .flex-2Col label { width:120px; margin:0px; }
+
+.colB 
+  .flex-2Col input { 
+  width:200px; 
+  padding:0px 5px; 
+}
+
+.colB 
+  .categoryTitle { 
+  display:flex; 
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:flex-end
 }

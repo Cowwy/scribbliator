@@ -18,7 +18,7 @@ class MemberPage extends Component {
                 <NavigationBarMember appTitle={`Member Area`} /> 
 
                 <div className="row h-100">
-                    <div className="col splash-screen">
+                    <div className="col">
                         <div className="scribbliator-memberpage">
                             <Switch>
                                 <Route path="/logout" render={ ( props ) => <LogoutPage onAuth={auth} {...props} /> } />
